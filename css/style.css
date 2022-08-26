@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.hero_s {
+  width: 40%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+}
+.hero_s img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.title {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(238, 238, 238, 0.183);
+  position: absolute;
+  top: 40px;
+}
+.title p {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: "Rubik Iso", cursive;
+  color: #eee;
+  padding: 5px;
+}
+
+.form_s {
+  width: 60%;
+  height: 100%;
+}
+
+.annoncement {
+  width: 100%;
+  height: 10%;
+}
+.annoncement p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px 0 0 40px;
+  color: azure;
+}
+.from_wrapper {
+  width: 100%;
+  height: 82%;
+  overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.from_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.from_wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.from_wrapper p {
+  font-size: 2rem;
+  color: #eee;
+  font-family: "DynaPuff", cursive;
+  margin-left: 2.2rem;
+}
+.from_wrapper form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.from_wrapper form > div {
+  width: 48%;
+  height: 6rem;
+  margin: 0.5rem;
+  display: flex;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.from_wrapper form > div > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 90%;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px azure solid;
+  color: #eee;
+  box-shadow: 2px 2px 3px 1px #eeeeee66;
+  margin: 0 0 0 1.5rem;
+  font-family: "DynaPuff", cursive;
+}
+.from_wrapper form > div > input:focus {
+  background-color: rgba(240, 248, 255, 0.278);
+  color: #eee;
+  border: 2px rgb(9, 167, 167) solid;
+  box-shadow: 0 0 0;
+}
+.from_wrapper small {
+  color: red;
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  display: none;
+}
+.span-nv {
+  color: red;
+  position: absolute;
+  right: 50px;
+  font-size: 1.4rem;
+  display: none;
+}
+.span_valid {
+  color: rgb(38, 207, 55);
+  position: absolute;
+  right: 50px;
+  font-size: 1.4rem;
+  display: none;
+}
+
+.error {
+  border: 2px rgb(167, 9, 9) solid !important;
+  box-shadow: 0 0 0 !important;
+}
+.valid {
+  border: 2px rgb(9, 167, 51) solid !important;
+  box-shadow: 0 0 0 !important;
+}
+#submitContainer {
+  width: 100%;
+  height: 4rem;
+}
+.btn-wrapper {
+  width: 10rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+}
+.btn-wrapper button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "DynaPuff", cursive;
+  transition: 0.5s ease-in;
+  background-color: #eee;
+}
+.btn-wrapper button:hover {
+  background-color: skyblue;
+  color: #eee;
+  letter-spacing: 1px;
+}
+.from_wrapper h3 {
+  color: #eee;
+  margin: 0 0 3rem 0;
+  font-size: 1rem;
+  padding: 5px;
+}
+.from_wrapper h4 {
+  color: rgb(236, 31, 31);
+  margin: 0 0 3rem 0;
+  text-decoration: underline;
+}
+
+.footr {
+  width: 100%;
+  height: 8%;
+  background-color: rgba(238, 238, 238, 0.183);
+}
+.footr p {
+  font-size: 1rem;
+  text-align: center;
+  color: azure;
+  padding: 15px;
+  font-family: "DynaPuff", cursive;
+}
+.footr a {
+  color: brown;
+}
